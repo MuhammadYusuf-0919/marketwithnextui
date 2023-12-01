@@ -2,8 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
+@import 'swiper/css';
+@import 'swiper/css/navigation';
+@import 'swiper/css/pagination';
+@import 'swiper/css/scrollbar';
+
+
+
+@font-face {
+  font-family: Comfortaa;
+  src: url('https://fonts.googleapis.com/css?family=Comfortaa');
+}
+
+:root{
+  font-family: Comfortaa,monospace;
+}
+@layer base {
+  html {
+    font-family: Comfortaa,monospace !important;
+    background: #F5FAFF !important;
+  }
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+::selection{
+  @apply bg-green text-light
+}
+
+h2 {
+  @apply text-center font-[600] text-[40px] md:text-[18px] sm:text-[16px]
+  leading-normal tracking-[1px] text-[#020202]
+}
+
+h3{
+  @apply text-center font-[600] text-[30px] md:text-[25px] sm:text-[20px]
+  leading-normal tracking-[1px] text-[#020202]
+}
+h4{
+  @apply text-center font-[600] text-[25px] sm:text-[20px]
+  leading-normal  text-[#020202]
+}
+
+
+
+
+
+.container{
+  @apply px-[370px] 2xl:px-[200px] xl:px-[100px] lg:px-[20px]
 }
