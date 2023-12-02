@@ -47,8 +47,16 @@ h4{
   leading-normal  text-[#020202]
 }
 
+.bg-success{
+  @apply !bg-green !text-light
+}
 
-
+nav ul{
+  @apply !gap-[20px]
+}
+nav ul span{
+  @apply !w-[30px] !h-[30px]
+}
 
 
 .container{

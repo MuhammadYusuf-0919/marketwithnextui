@@ -33,9 +33,8 @@ const Contact = () => {
         base: "py-0 px-0 !rounded-lg w-full !bg-[#F5FAFF] relative !border-none !shadow-sm",
         title: "font-normal text-[16px] sm:text-[10px]",
         trigger: "px-[20px] py-[10px]  rounded-lg h-14 flex items-center h-[40px]",
-        indicator: "text-[22px] !text-[#000]   rotate-[-180deg]",
+        indicator: "text-[22px] !text-[#000] rotate-[-180deg]",
         content: "text-small sm:text-[12px] pl-[20px]",
-
     }
     return (
         <div className='container flex items-start md:flex-col md:justify-center gap-[82px] pt-[150px] md:pt-[100px] align-top pb-[150px] sm:pb-[60px] relative'>
@@ -86,10 +85,11 @@ const Contact = () => {
                 <h4 className='pb-[33px]'>Часто задаваемые вопросы</h4>
                 <Accordion variant="splitted" itemClasses={classNames}
                     className='gap-[23px]'
+                    onSelectionChange={(e) => console.log(...e)}
                 >
-                    {questions.map(q => (
+                    {questions.map((q, index) => (
                         <AccordionItem
-                            key={q.q}
+                            key={index}
                             aria-label={q.q}
                             title={q.q}
                         >

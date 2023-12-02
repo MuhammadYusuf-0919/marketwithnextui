@@ -36,6 +36,16 @@ const config = {
         'lg':'0px 0px 40px 0px rgba(86, 86, 86, 0.30)',
         'md':'0px 0px 30px 0px rgba(86, 86, 86, 0.25)',
         'sm':'0px 0px 20px 0px rgba(86, 86, 86, 0.20)'
+      },
+      keyframes:{
+        slide:{
+          '0%,100%':{transform:'translateX(0px)'},
+          '50%':{transform:'translateX(4px)'},
+          '80%':{transform:'translateX(10px)'},
+        }
+      },
+      animation:{
+        slide:'slide 1.2s ease infinite'
       }
     },
   },

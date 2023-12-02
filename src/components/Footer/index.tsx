@@ -7,7 +7,7 @@ import tg from '@/assets/tg.png'
 const Footer = () => {
     return (
         <div className='container items-center py-[41px] shadow-md mb-[100px] smd:mb-[50px] 
-        flex justify-between smd:flex-col smd:gap-[27px]'>
+        flex justify-between smd:flex-col smd:gap-[27px] bg-light'>
             <div className="flex flex-col gap-[7px] smd:hidden">
                 <a href="https://youtube.com" className='hover:text-green 
                 hover:scale-[1.1] duration-200'>
