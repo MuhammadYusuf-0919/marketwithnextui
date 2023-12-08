@@ -35,7 +35,7 @@ const Blogs = ({ title, data }: thisProps) => {
                     <MyPagination count={Math.ceil((mapData().length) / 6)} setPg={setPage} pg={page} />
                 </div>}
             </div>
-            <MainModal open={true} />
+            <MainModal open={false} />
         </div>
     )
 }
