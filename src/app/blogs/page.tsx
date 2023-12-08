@@ -1,5 +1,4 @@
 'use client'
-
 import Blogs from "@/components/Blogs"
 
 const Blog = () => {

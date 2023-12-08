@@ -9,7 +9,7 @@ import se from '@/assets/a2.png'
 const Slider = () => {
     return (
         <div className='relative'>
-            <h3 className='pb-[60px]'>Фото блюд</h3>
+            <h3 className='pb-[60px] pt-[120px] md:pt-[60px] smd:pt-[30px] smd:pb-[30px]'>Фото блюд</h3>
             <img src={se.src} className='absolute left-0 top-0 md:hidden' alt="" />
             <img src={fi.src} className='absolute bottom-[-5%] left-[30%] md:hidden' alt="" />
             <Marquee autoFill pauseOnHover>

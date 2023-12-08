@@ -5,7 +5,7 @@ interface thisProps {
     children: string,
     variant?: string,
     className?: string,
-    onClick?: () => void,
+    onClick?: any,
     loading?: boolean,
 }
 const MyButton = ({ children, variant, className, onClick, loading }: thisProps) => {

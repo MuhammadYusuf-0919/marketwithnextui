@@ -22,7 +22,7 @@ export default function MyPagination({ count, setPg, pg }: thisProps) {
         onPrevious,
         className,
     }: PaginationItemRenderProps<HTMLButtonElement>) => {
-        console.log(count, pg);
+
         if (value === PaginationItemType.NEXT) {
             return (
                 <button key={key} className={cn(className, "group hover:bg-green bg-[#DEE6EE] text-ellipsis w-[30px] h-[30px]")} onClick={() => { onNext(), setPg(pg !== count ? pg + 1 : pg) }}>

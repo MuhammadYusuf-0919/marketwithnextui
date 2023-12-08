@@ -2,11 +2,11 @@
 import React, { useState } from 'react'
 import Blog from '@/components/Blogs/Blog'
 import MyPagination from '@/themes/MyPagination'
-import bg1 from '@/assets/blogbg1.png'
 import bg2 from '@/assets/blogbg2.png'
 import bg3 from '@/assets/blogbg3.png'
 import { blogs } from './data'
 import blogProps from './types'
+import MainModal from '../MainModal'
 
 interface thisProps {
     title?: string,
@@ -22,7 +22,6 @@ const Blogs = ({ title, data }: thisProps) => {
 
     return (
         <div className={`${!title && 'container relative'} pb-[100px] pt-[83px] md:pt-[30px] sm:pb-[60px]`}>
-            {!title && <img className='absolute md:hidden right-0 top-0 z-[-1]' src={bg1.src} alt="" />}
             <img className='absolute md:hidden left-0 bottom-[-200px] z-[-1] rotate-[-19.057deg]' src={bg2.src} alt="" />
             <img className='absolute md:hidden right-0 bottom-[-20px] z-[-1]' src={bg3.src} alt="" />
             {title && <h4 className='pb-[20px]'>{title}</h4>}
@@ -36,6 +35,7 @@ const Blogs = ({ title, data }: thisProps) => {
                     <MyPagination count={Math.ceil((mapData().length) / 6)} setPg={setPage} pg={page} />
                 </div>}
             </div>
+            <MainModal open={true} />
         </div>
     )
 }

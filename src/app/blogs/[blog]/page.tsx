@@ -17,7 +17,7 @@ const Blog = () => {
         router.back()
     }
     return (
-        <div className='container relative flex flex-col gap-[60px] md:gap-[30px]'>
+        <div className='container mt-[-30px] md:mt-[-5px] smd:mt-[-10px] relative flex flex-col gap-[60px] md:gap-[30px]'>
             <div className=' flex flex-col gap-[40px]'>
                 <img src={blogs[+params.blog].img} alt="" loading='lazy' className='w-full h-[500px] md:h-[240px] sm:h-[120px] rounded-sm shadow-xl object-cover' />
                 <div className='flex w-full gap-[20px] smd:flex-col-reverse justify-between items-start'>

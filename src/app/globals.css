@@ -5,7 +5,8 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
-@import 'swiper/css/scrollbar';
+@import 'swiper/swiper-bundle.css';
+@import 'swiper/css/effect-creative';
 
 
 
@@ -61,4 +62,8 @@ nav ul span{
 
 .container{
   @apply px-[370px] 2xl:px-[200px] xl:px-[100px] lg:px-[20px]
+}
+
+.swiper-pagination{
+  @apply flex justify-start pl-[36%]
 }

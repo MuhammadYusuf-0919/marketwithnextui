@@ -16,14 +16,16 @@ const config = {
     colors:{
       'green':'#64D370',
       'dark':'#020202',
-      'light':'#F5FAFF'
+      'light':'#F5FAFF',
+      'blur':'rgba(245, 250, 255, 0.80)'
     },
     screens:{
       '2xl': {'max': '1750px'},
+      'lxl':{'max':'1600px'},
       'xl': {'max': '1380px'},
       'lg': {'max': '1170px'},
       'md': {'max': '1000px'},
-      'smd': {'max': '800px'},
+      'smd': {'max': '770px'},
       'sm': {'max': '456px'}
     },
     extend: {
@@ -46,6 +48,10 @@ const config = {
       },
       animation:{
         slide:'slide 1.2s ease infinite'
+      },
+      dropShadow:{
+        red:'0px 0px 10px #FE3666',
+        green:'0px 0px 10px #64D370'
       }
     },
   },
